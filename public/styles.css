@@ -1,0 +1,318 @@
+/* RESET + BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e4ede7;
+  color: #2e4d2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ========== AUTH (Sign In / Sign Up) ========== */
+.auth-container {
+  background-color: #d1e2d8;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(81, 130, 90, 0.25);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #416336;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b9ccb9;
+  border-radius: 10px;
+  background-color: #f0f5f1;
+  font-size: 1rem;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #567a54;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #416336;
+}
+
+.auth-container p {
+  margin-top: 16px;
+}
+
+.auth-container a {
+  color: #2a502a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* ========== BLOG FEED PAGE ========== */
+.blog-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #d1e2d8;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(81, 130, 90, 0.2);
+  margin: 40px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #416336;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav .btn {
+  background-color: #567a54;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+nav .btn:hover {
+  background-color: #416336;
+}
+
+/* Blog Posts */
+.posts {
+  margin-top: 30px;
+}
+
+.post {
+  background-color: #e6f0e8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 8px rgba(81, 130, 90, 0.1);
+}
+
+.post h2 {
+  color: #416336;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 1.1rem;
+  color: #2e4d2e;
+}
+
+.post small {
+  display: block;
+  margin-top: 12px;
+  font-style: italic;
+  color: #567a54;
+}
+
+/* ========== CREATE PAGE ========== */
+.create-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #d1e2d8;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(81, 130, 90, 0.2);
+  margin: 40px auto;
+}
+
+.create-container h1 {
+  text-align: center;
+  color: #416336;
+  margin-bottom: 24px;
+}
+
+.create-container form input,
+.create-container form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b9ccb9;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f0f5f1;
+}
+
+.create-container form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #567a54;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-container form button:hover {
+  background-color: #416336;
+}
+/* SIGN IN AND SIGN UP */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e4ede7;
+}
+
+.auth-container {
+  background-color: #d1e2d8;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(81, 130, 90, 0.25);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #416336;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b9ccb9;
+  border-radius: 10px;
+  background-color: #f0f5f1;
+  font-size: 1rem;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #567a54;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #416336;
+}
+
+.bottom-link {
+  margin-top: 20px;
+}
+
+.bottom-link a {
+  color: #2a502a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bottom-link a:hover {
+  text-decoration: underline;
+}
+
+/* Center the buttons in the post */
+.post-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+}
+
+/* Style Edit button */
+.edit-btn {
+  background-color: #416336;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #2f4a22;
+}
+
+/* Style Delete button */
+.delete-btn {
+  background-color: #a94442;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #7b322f;
+}
+
+.back-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-btn {
+  background-color: #8fae8f;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #6e8c6e;
+}

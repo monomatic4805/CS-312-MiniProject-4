@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Feed</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="blog-container">
+    <header>
+      <h1>Blog Feed</h1>
+      <nav>
+        <a href="/blogs/create" class="btn">Create Post</a>
+        <a href="/logout" class="btn">Logout</a>
+      </nav>
+    </header>
+
+    <section class="posts">
+      <% if (blogs.length === 0) { %>
+        <p>No posts yet.</p>
+      <% } else { %>
+        <% blogs.forEach(blog => { %>
+          <article class="post">
+            <h2><%= blog.title %></h2>
+            <p><%= blog.body %></p>
+            <small>By <%= blog.creator_name %> on <%= new Date(blog.date_created).toLocaleString() %></small>
+
+            <% if (blog.creator_user_id === userId) { %>
+              <form method="POST" action="/blogs/delete/<%= blog.blog_id %>" onsubmit="return confirm('Delete this post?');" class="post-actions">
+                <a href="/blogs/edit/<%= blog.blog_id %>" class="btn edit-btn">Edit</a>
+                <button type="submit" class="btn delete-btn">Delete</button>
+              </form>
+            <% } %>
+          </article>
+        <% }) %>
+      <% } %>
+    </section>
+  </div>
+</body>
+</html>
