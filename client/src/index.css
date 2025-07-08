@@ -1,0 +1,156 @@
+/* General container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Button group on top */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons style */
+.btn, .btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-secondary {
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.5);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4);
+}
+.btn-warning:hover {
+  background-color: #d39e00;
+  box-shadow: 0 6px 15px rgba(211, 158, 0, 0.6);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+.btn-danger:hover {
+  background-color: #a71d2a;
+  box-shadow: 0 6px 15px rgba(167, 29, 42, 0.6);
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+.btn-success:hover {
+  background-color: #1e7e34;
+  box-shadow: 0 6px 15px rgba(30, 126, 52, 0.6);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+.btn-secondary:hover {
+  background-color: #494f54;
+  box-shadow: 0 6px 15px rgba(73, 79, 84, 0.6);
+}
+
+/* Smaller buttons */
+.btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+/* Cards for posts */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-body h5 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.card-body p {
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Form controls */
+input.form-control,
+textarea.form-control {
+  width: 100%;
+  border: 1.8px solid #ced4da;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Headings */
+h2 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Paragraph message */
+p {
+  color: #666;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Margin helpers */
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
